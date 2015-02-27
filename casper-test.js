@@ -58,7 +58,7 @@ var testUrl = function (response) {
         checkPageSize(response);
 
         if (casper.getHTML().match(/<body class="layout/) === null) {
-            this.echo(templates.noBodyTag({url: response.url}))
+            this.echo(templates.noBodyTag({url: response.url}), 'ERROR');
         }
 
         if (response.contentType.indexOf('html') === -1) {

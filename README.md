@@ -27,7 +27,7 @@ Go to the project folder and do:
 
 
 You need casperjs and it should have been installed as `node_module` but might not find phantomjs where it expects it.
-If that is the case take a look at the output of `npm install'. It should say something like
+If that is the case take a look at the output of `npm install`. It should say something like
 
 > Phantomjs binary available at /Users/jfd/Dev/redis-casper/node_modules/casperjs/node_modules/phantomjs/lib/phantom/bin/phantomjs
 

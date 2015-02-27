@@ -33,6 +33,11 @@ If that is the case take a look at the output of `npm install'. It should say so
 
 Add that path to your `$PATH` and you should be set
 
+## Get the current live data and import it into your local ez
+
+1. Go to jenkins and trigger the "DB Sync"-Job
+2. Once it is done, get the sql dump file and import it into ez (complicated process, get Andreas to help you :-) )
+
 
 ## Run script
 
@@ -42,4 +47,10 @@ Add that path to your `$PATH` and you should be set
 3. Run `./node_modules/.bin/casperjs casper-test.js`
 4. Wait. Be aware that there is no logging output as casper right now does not play well with node. If you need
 to persist the output redirect it to a file.
+
+## Check output
+
+If something goes wrong, check the url in your local devbox. Beware that many failures are actually issues with the
+live data. So if something sounds weird and unconnected to redis, check the live version to be sure that this
+is not a false positive.
 
